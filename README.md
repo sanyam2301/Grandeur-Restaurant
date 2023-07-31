@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+# Grandeur-Restarant Website React UI/UX Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an opensource react ui template for creating high end business websites with various sections such as navbar, header, about, profiles, contact, gallery & menu.
 
-## Available Scripts
+## Table of Contents
 
-In the project directory, you can run:
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Folder Structure](#folder-structure)
+- [BEM Class Naming](#bem-class-naming)
+- [Additional Best Practices](#additional-best-practices)
+- [Contributing](#contributing)
+- [License](#license)
 
-### `npm start`
+## Introduction
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The Grandeur-restaurant UI/UX Website is a modern and responsive web application designed to showcase best practices in front-end development, particularly focusing on React, folder organization, BEM class naming, fundamental CSS properties such as flex & grid, pleasant animations, complex gradients and other industry-proven techniques to create maintainable and user-friendly UI/UX.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- Modern UI design with a focus on user experience.
+- Responsiveness for a seamless experience across various devices.
+- Fast and efficient, thanks to React's virtual DOM.
+- Best folder structure for better code organization.
+- BEM class naming convention for consistent and scalable CSS.
+- Use of state management library (e.g., Redux) for managing complex application states.
+- Code splitting and lazy loading for improved performance.
+- CSS Flex & Grid, Gradients, Animations
+- Webpack for bundling and optimizing the production build.
+- ESLint and Prettier for code consistency and formatting.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To run the project locally, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository: `git clone https://github.com/sanyam2301/awesome-react-website.git`
+2. Install the dependencies: `cd awesome-react-website && npm install`
+3. Start the development server: `npm start`
+4. Open your browser and navigate to `http://localhost:3000` to view the website.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The project follows a well-organized folder structure to keep the codebase clean and manageable:
 
-### `npm run eject`
+- `public`: Contains the public assets such as HTML template, favicon, etc.
+- `src`: Contains the application source code.
+  - `components`: Reusable React components used across the application.
+  - `containers`: Top-level components that serve as pages or views.
+  - `App.js`: The root component of the application.
+  - `index.js`: Entry point of the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## BEM Class Naming
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The project follows the BEM (Block-Element-Modifier) naming convention for CSS classes to ensure a clear and scalable structure:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```css
+/* Block component */
+.button {
+}
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+/* Element that depends upon the block */
+.button__icon {
+}
 
-## Learn More
+/* Modifier that changes the style of the block */
+.button--primary {
+}
+.button--disabled {
+}
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Additional Best Practices
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Code is written in ES6+ and follows the latest JavaScript standards.
+- Component-based architecture for reusability and maintainability.
+- React hooks are used for state management and lifecycle handling.
+- CSS is organized using a modular approach to avoid global styles.
+- Accessibility (a11y) best practices are followed for better usability.
+- Cross-browser compatibility is ensured for major modern browsers.
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions to this project are welcome! If you find any issues or want to suggest improvements, please open an issue or submit a pull request. Ensure that your code follows the established coding style and best practices.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+This project is licensed under the [MIT License](LICENSE). Feel free to use, modify, and distribute the code for personal and commercial projects.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for checking out the Awesome React UI/UX Website project! We hope this serves as a valuable resource for understanding best practices in front-end development using React. Happy coding! 🚀
